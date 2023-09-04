@@ -6,6 +6,7 @@ Til að keyra test suite-ið er hægt að keyra test suite-ið locally með:
 git clone https://github.com/valdi7913/newton-api-test-suite.git
 cd newton-api-test-suite
 npm install
+npm run build
 npm start
 ```
 Svo í öðru terminal-i keyra:
