@@ -14,6 +14,9 @@ npm test
 ```
 til að keyra test-in
 
+Til að keyra test-in á deployed API-inu þarf einfaldelga að breyta .env API_URL í https://newton.vercel.app
+Ég læt .env fylgja með inná github, sem er náttúrulega ekki gert í production, til að einfalda ykkur keyrsluna.
+
 ## Markmið
 Sýna hæfileika mína í að skrifa test fyrir public api. Ég valdi þetta api sérstaklega vegna fjölda edge-case-a sem geta myndast í stærðfræði.
 
@@ -29,3 +32,11 @@ Skrifa test fyrir öll endpoint sem uppfylla strategy-una.
 Þar sem verkefnið snýst ekki um að forrita API-ið mun ég ekki breyta því neitt og munu allar mínar breytingar vera í foldernum ./tests. Það eru nú þegar nokkur test undir file-num test.js en ég læt þau alveg vera. Ég skrifaði upp öll endpoint example-in gefin í upprunalega README.md skjali API-sins þar sem þau ættu öll að virka.
 
 Ég ákvað að nota test library-ið Jest.js vegna þess að ég hef reynslu í því.
+## Niðurstaða
+Þegar API-ið er keyrt locally er niðurstaða eftirfarandi
+2 failed test, eitt example úr upprunalega API README.md og eitt sem ég smíðaði
+* Integrate endpoint-ið failar upprunalegt example, það er ekki bætt við c í lok
+* Arctan endpoint-ið failar í mínu custom test-i, vitlaust reiknað
+
+Hinsvegar þegar kallað er á API-ið sem er deployed á [hér](https://newton.vercel.app/) virðist eitthvað REGEX eða string split bila með samlagningu og þá failar API-ið á 8 testum
+
