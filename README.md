@@ -14,7 +14,8 @@ npm test
 ```
 til að keyra test-in
 
-Til að keyra test-in á deployed API-inu þarf einfaldelga að breyta .env API_URL í https://newton.vercel.app
+Til að keyra test-in á deployed API-inu þarf einfaldelga að breyta .env API_URL í https://newton.vercel.app.
+
 Ég læt .env fylgja með inná github, sem er náttúrulega ekki gert í production, til að einfalda ykkur keyrsluna.
 
 ## Markmið
